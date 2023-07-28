@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #464444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+}
+
+#container {
+    width: 1024px;
+    height: 849px;
+    background-color: #1C233D;
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 40px;
+    color: #E5E5E5;
+    margin: 20px 0 50px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+
+/* nav-bar */
+#header .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header .nav-bar {
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .brand-name {
+    color: #E5E5E5;
+    font-family: Space Grotesk;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#header .nav-bar-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header ul li {
+    list-style: none;
+    color: #E5E5E5;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+        line-height: 40px;
+}
+
+.nav-bar-items li a {
+    text-decoration: none;
+    color: #E5E5E5;
+    /* line-height: 40px; */
+    padding: 0 20px;
+}
+/* end nav-bar */
+
+/* search-bar-container */
+.search-bar-container .search-bar {
+    width: 242px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    position: relative;
+}
+
+#header .search-bar-container input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    background-color: #1C233D;
+}
+
+#header .search-bar-container i {
+    position: absolute;
+    right: 10px;
+    line-height: 38px;
+}
+
+#header input::placeholder {
+    color: #E5E5E5;
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 7px;
+}
+
+#header .search-bar-container .fa-magnifying-glass {
+    position: absolute;
+    float: right;
+}
+/* end search-bar-container */
+
+/* sign-in-btn */
+#header .sign-in-btn {
+    display: inline-flex;
+    padding: 8px 31px 9px 29px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(55deg, rgba(191, 196, 238, 0.09) 15.52%, #C367E6 58.75%, rgba(190, 206, 239, 0.00) 100%);
+    color: #E5E5E5;
+}
+
+/* end sign-in-btn */
+/* end header */
+
+/* content */
+/* left */
+#content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#text {
+    padding: 40px;
+    color: #E5E5E5;
+}
+
+/* text */
+#text h1 {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#text p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+#text .disco-btn {
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(55deg, rgba(191, 196, 238, 0.09) 15.52%, #C367E6 58.75%, rgba(190, 206, 239, 0.00) 100%);
+    display: inline-flex;
+    padding: 10px 48px 10px 47px;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5
+}
+
+#text .disco-btn::placeholder {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/* end text */
+
+/* number */
+.number {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+}
+
+.number .number-plus {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.number .number-text {
+    color: #E5E5E5;
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* end left */
+
+/* right */
+#art-work {
+    width: 404px;
+    height: 494px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #30384D;
+    /* position: relative; */
+}
+
+#art-work .art-work-img img {
+    width: 100%;
+    /* position: absolute; */
+    border-radius: 4.894px;
+}
+
+/* other */
+.others {
+    margin: 5px;
+    display: flex;
+    position: relative;
+}
+
+.others .name {
+    color: #E5E5E5;
+    position: absolute;
+    left: 0;
+}
+
+.others .others-avt {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.others .others-avt img {
+    width: 29px;
+    height: 28px;
+    border-radius: 29px;
+}
+/* end other */
+
+
+/* detail */
+.detail {
+    margin-top: 10px;
+    color: #E5E5E5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.detail img {
+    width: 8px;
+height: 8px;
+border-radius: 8px;
+}
+
+.detail .text {
+    color: #545C71;
+    font-family: DM Mono;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.detail .value {
+    color: #FFF;
+    font-family: DM Mono;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*end detail */
+/* end right */
+/* end content */
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: end;
+    margin: 100px 50px 30px 0;
+}
+
+.footer .img-ft {
+    padding: 0 30px;
+    height: 80px;
+}
+
+.footer .img-ft img {
+    width: 136px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+
+#outside {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#outside .smaller-text {
+    font-family: DM Mono;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(180deg, #9C76B8 0%, rgba(156, 118, 184, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#outside .bigger-text {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
